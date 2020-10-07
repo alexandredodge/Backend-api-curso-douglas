@@ -2,18 +2,15 @@ package io.github.alexandre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.github.alexandre.model.entidades.Cliente;
 
 @SpringBootApplication
 @RestController
 public class ClientesApplication {
 	
-	@GetMapping("/hello")
-	public String helloWorld() {
-		return "Olá";
-	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ClientesApplication.class, args);
 	}
